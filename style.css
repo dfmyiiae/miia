@@ -1,0 +1,147 @@
+
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #1c1018;
+    color: #f5dce7;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #39202f, #75465e, #b97891);
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* NAVIGATION */
+nav {
+    background: #291923;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #f5dce7;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffc1d8;
+}
+
+/* MAIN LAYOUT */
+.container {
+    width: 95%;
+    max-width: 1500px;
+    margin: 30px auto;
+}
+
+/* GAME SECTION - BIGGER */
+#tetris {
+    width: 100%;
+    background: #3a2532;
+    padding: 25px;
+    border: 2px solid #a76d86;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 15px #b97891;
+}
+
+#tetris h2 {
+    text-align: center;
+    color: #ffc1d8;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#tetris iframe {
+    width: 100%;
+    height: 750px;
+    border: 3px solid #b97891;
+    border-radius: 12px;
+    background: #1c1018;
+}
+
+/* OTHER CONTENT */
+.other-sections {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: #3a2532;
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid #a76d86;
+    text-align: center;
+    box-shadow: 0 0 10px #75465e;
+}
+
+.card h2 {
+    color: #ffc1d8;
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* BUTTONS */
+button {
+    background: #b97891;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #e58caf;
+    box-shadow: 0 0 12px #ffc1d8;
+}
+
+/* FOOTER */
+footer {
+    background: #291923;
+    text-align: center;
+    padding: 20px;
+    margin-top: 35px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 26px;
+    }
+
+    .other-sections {
+        grid-template-columns: 1fr;
+    }
+
+    #tetris iframe {
+        height: 550px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+}
+

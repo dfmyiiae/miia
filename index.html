@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Entertainment Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1> DFMYIIAE PIXELVERSE </h1>
+        <p>Play Tetris, discover cat facts and enjoy jokes!</p>
+    </header>
+
+    <nav>
+        <a href="#tetris">Tetris Game</a>
+        <a href="#cats">Cat Facts</a>
+        <a href="#jokes">Jokes</a>
+    </nav>
+
+    <main>
+
+        <!-- Tetris Section -->
+        <section id="tetris" class="card">
+            <h2>Tetris Game</h2>
+            <div id="tetrisGame">
+                <p>Click below to play Tetris!</p>
+                <iframe
+                    src="https://tetris.com/play-tetris"
+                    width="100%"
+                    height="300"
+                    style="border:none;">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Cat Facts Section -->
+        <section id="cats" class="card">
+            <h2>Random Cat Facts</h2>
+            <div class="emoji">🐱</div>
+            <p id="catFact">Click the button to discover an interesting cat fact!</p>
+            <button onclick="getCatFact()">Get Cat Fact</button>
+        </section>
+
+        <!-- Joke Section -->
+        <section id="jokes" class="card">
+            <h2>Random Jokes</h2>
+            <div class="emoji">😂</div>
+            <p id="jokeSetup">Click the button to get a joke!</p>
+            <p id="jokePunchline"></p>
+            <button onclick="getJoke()">Tell Me a Joke</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 dfmyiiae pixelverse | Powered by Free APIs</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
